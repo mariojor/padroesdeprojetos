@@ -1,9 +1,10 @@
-package factorymethod;
+package factorymethod.product;
 
 import java.util.Calendar;
 
 //Produto Concreto
 public class PassagemOnibusInterestadual extends Passagem {
+	
 	public PassagemOnibusInterestadual(String origem, String destino, Calendar dataHoraPartida) {
 		super(origem, destino, dataHoraPartida);
 	}

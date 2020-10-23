@@ -1,4 +1,4 @@
-package factorymethod;
+package factorymethod.product;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

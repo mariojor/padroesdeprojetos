@@ -1,6 +1,8 @@
-package factorymethod;
+package factorymethod.factory;
 
 import java.util.Calendar;
+
+import factorymethod.product.Passagem;
 
 //Fábrica
 public abstract class Empresa {
