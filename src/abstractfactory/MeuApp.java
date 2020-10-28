@@ -5,10 +5,8 @@ import java.util.GregorianCalendar;
 
 import abstractfactory.factory.EmpresaOnibus;
 import abstractfactory.product.ConcreteEmpresaOnibus;
-import factorymethod.factory.Empresa;
-import factorymethod.factory.EmpresaOnibusInterestadual;
-import factorymethod.factory.EmpresaOnibusUrbano;
-import factorymethod.product.Passagem;
+import abstractfactory.product.PassagemOnibusInterestadual;
+import abstractfactory.product.PassagemOnibusUrbano;
 
 public class MeuApp {
 
@@ -16,5 +14,10 @@ public class MeuApp {
 
 		EmpresaOnibus empOnibus = new ConcreteEmpresaOnibus();
 		
+		PassagemOnibusUrbano emitePassagemOnibusUrbano = empOnibus.emitePassagemOnibusUrbano("São Paulo", "Rio de janeiro", new GregorianCalendar(2020, Calendar.APRIL, 10, 11,0));
+		PassagemOnibusInterestadual emitePassagemOnibusInterestadual = empOnibus.emitePassagemOnibusInterestadual("São Paulo", "Campinas", new GregorianCalendar(2020, Calendar.MARCH, 10, 11,0));
+	
+		emitePassagemOnibusInterestadual.exibeDetalhes();
+		emitePassagemOnibusUrbano.exibeDetalhes();
 	}
 }

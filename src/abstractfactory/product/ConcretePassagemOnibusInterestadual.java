@@ -2,7 +2,7 @@ package abstractfactory.product;
 
 import java.util.Calendar;
 
-public abstract class ConcretePassagemOnibusInterestadual extends PassagemOnibusInterestadual{
+public class ConcretePassagemOnibusInterestadual extends PassagemOnibusInterestadual{
 	
 	public ConcretePassagemOnibusInterestadual(String origem, String destino, Calendar dataHoraPartida) {
 		super(origem, destino, dataHoraPartida);

@@ -6,17 +6,13 @@ import abstractfactory.factory.EmpresaOnibus;
 
 public class ConcreteEmpresaOnibus extends EmpresaOnibus {
 
-	@Override
 	public PassagemOnibusUrbano emitePassagemOnibusUrbano(String origem, String destino, Calendar dataHoraPartida) {
-		// TODO Auto-generated method stub
-		return null;
+		return new ConcretePassagemOnibusUrbano(origem, destino, dataHoraPartida);
 	}
 
-	@Override
 	public PassagemOnibusInterestadual emitePassagemOnibusInterestadual(String origem, String destino,
 			Calendar dataHoraPartida) {
-		// TODO Auto-generated method stub
-		return null;
+		return new ConcretePassagemOnibusInterestadual(origem, destino, dataHoraPartida);
 	}
 
 }
